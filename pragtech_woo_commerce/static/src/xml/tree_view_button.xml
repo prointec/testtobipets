@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-extend="ListView.buttons">
+        <t t-jquery="div.o_list_buttons" t-operation="append">
+            <button type="button" t-if='widget.modelName == "res.partner"'
+                    class="oe_customer_import_button btn btn-primary">Import from WooCommerce
+            </button>
+            <button type="button" t-if='widget.modelName == "product.template"'
+                    class="oe_product_import_button btn btn-primary">Import from WooCommerce
+            </button>
+             <button type="button" t-if='widget.modelName == "product.template"'
+                    class="oe_inventory_import_button btn btn-primary">Update Stock Quantity
+            </button>
+             <button type="button" t-if='widget.modelName == "product.category"'
+                    class="oe_product_categ_import_button btn btn-primary">Import from WooCommerce
+            </button>
+             <button type="button" t-if='widget.modelName == "account.tax"'
+                    class="oe_tax_import_button btn btn-primary">Import from WooCommerce
+            </button>
+            <button type="button" t-if='widget.modelName == "sale.order"'
+                    class="oe_so_import_button btn btn-primary">Import from WooCommerce
+            </button>
+            <button type="button" t-if='widget.modelName == "product.attribute"'
+                    class="oe_attribute_import_button btn btn-primary">Import from WooCommerce
+            </button>
+             <button type="button" t-if='widget.modelName == "product.attribute.value"'
+                    class="oe_attribute_term_import_button btn btn-primary">Import from WooCommerce
+            </button>
+            <button type="button" t-if='widget.modelName == "product.tag"'
+                    class="oe_tag_import_button btn btn-primary">Import from WooCommerce
+            </button>
+        </t>
+    </t>
+</templates>
